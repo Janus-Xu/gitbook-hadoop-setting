@@ -1,0 +1,602 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Hadoop HA 初次启动 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hadoop-ha-fei-chu-ci-qi-dong.html" />
+    
+    
+    <link rel="prev" href="hadoop-ha-da-jian.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Centos Hadoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../centos-jdk-an-zhuang.html">
+            
+                <a href="../centos-jdk-an-zhuang.html">
+            
+                    
+                    Centos JDK 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../centos-hadoop-an-zhuang.html">
+            
+                <a href="../centos-hadoop-an-zhuang.html">
+            
+                    
+                    Centos Hadoop 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                <a href="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                    
+                    Centos 配置及检查SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                <a href="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                    
+                    Centos 伪分布模式配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                <a href="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                    
+                    Centos Hadoop 格式化及启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                <a href="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                    
+                    Centos Hadoop 全分布式集群搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="chuang-jian-xin-yong-hu.html">
+            
+                <a href="chuang-jian-xin-yong-hu.html">
+            
+                    
+                    创建新用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                <a href="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                    
+                    设置主机名与域名解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="ssh-mian-mi-deng-lu.html">
+            
+                <a href="ssh-mian-mi-deng-lu.html">
+            
+                    
+                    SSH 免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="an-zhuang-openjdk.html">
+            
+                <a href="an-zhuang-openjdk.html">
+            
+                    
+                    安装 OpenJDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                <a href="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                    
+                    Hadoop 安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="pei-zhi-ji-qun.html">
+            
+                <a href="pei-zhi-ji-qun.html">
+            
+                    
+                    配置集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.7" data-path="ji-qun-cao-zuo.html">
+            
+                <a href="ji-qun-cao-zuo.html">
+            
+                    
+                    集群操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.8" data-path="an-zhuang-zookeeper.html">
+            
+                <a href="an-zhuang-zookeeper.html">
+            
+                    
+                    安装 Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.9" data-path="hadoop-ha-da-jian.html">
+            
+                <a href="hadoop-ha-da-jian.html">
+            
+                    
+                    Hadoop HA 搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.6.10" data-path="hadoop-ha-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.11" data-path="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 非初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.12" data-path="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                <a href="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                    
+                    常见错误及解决方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                <a href="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                    
+                    Centos 常用配置及命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Hadoop HA 初次启动</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hadoop-ha-&#x521D;&#x6B21;&#x542F;&#x52A8;&#x987A;&#x5E8F;">Hadoop HA &#x521D;&#x6B21;&#x542F;&#x52A8;&#x987A;&#x5E8F;</h1>
+<p>1.&#x542F;&#x52A8; Zookeeper &#x96C6;&#x7FA4; &#xFF08;hadoop-slave01&#x3001;hadoop-slave02 &#x548C; hadoop-slave03&#xFF09;, &#x9700;&#x8981;&#x5206;&#x522B;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x6BCF;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x542F;&#x52A8;&#x3002;</p>
+<pre><code>$ ~/app/zookeeper-3.4.10/bin/zkServer.sh start
+</code></pre><p>&#x5F00;&#x542F;&#x540E;&#x4F7F;&#x7528; jps &#x67E5;&#x770B;&#x662F;&#x5426;&#x6709; QuorumPeerMain &#x8FDB;&#x7A0B;&#xFF0C;&#x82E5;&#x6709;&#xFF0C;&#x5219;&#x6210;&#x529F;&#x5F00;&#x542F;&#x4E86;&#xFF0C;&#x6216;&#x8005;&#x8F93;&#x5165; zkServer.sh status &#x67E5;&#x770B;&#x670D;&#x52A1;&#x72B6;&#x6001;</p>
+<p><strong>&#x6B63;&#x786E;&#x7684;&#x72B6;&#x6001;&#x662F;&#x4E00;&#x4E2A; leader&#xFF0C;&#x4E24;&#x4E2A; follower</strong>&#x3002;</p>
+<pre><code>[hadoop@hadoop-slave01 /home/hadoop]$jps
+11198 QuorumPeerMain
+12779 Jps
+
+[hadoop@hadoop-master /root]$~/app/zookeeper-3.4.10/bin/zkServer.sh status
+ZooKeeper JMX enabled by default
+Using config: /home/hadoop/app/zookeeper-3.4.10/bin/../conf/zoo.cfg
+mkdir: cannot create directory  Permission denied
+Mode: follower
+</code></pre><p>2.&#x542F;&#x52A8; journalnode &#xFF08;hadoop-slave01&#x3001;hadoop-slave02 &#x548C; hadoop-slave03&#xFF09;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728; hadoop-master &#x4E2D;</p>
+<pre><code>$cd ~/app/hadoop-2.7.4/sbin/
+$./hadoop-daemons.sh start journalnode
+</code></pre><p>&#x542F;&#x52A8;&#x6210;&#x529F;&#x540E;&#x4F1A;&#x591A;&#x51FA;&#x4E00;&#x4E2A; JournalNode &#x8FDB;&#x7A0B;</p>
+<pre><code>[hadoop@hadoop-slave01 /home/hadoop]$jps
+12229 JournalNode
+12779 Jps
+11198 QuorumPeerMain
+</code></pre><p>3.&#x683C;&#x5F0F;&#x5316; HDFS &#xFF08;hadoop-master&#xFF09;</p>
+<p>&#x7531;&#x4E8E;&#x662F;&#x5C06;&#x4E4B;&#x524D;&#x642D;&#x5EFA;&#x7684;&#x975E; HA &#x96C6;&#x7FA4;&#x8F6C;&#x6362;&#x6210; HA &#x96C6;&#x7FA4;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x65B0; format namenode &#xFF0C;&#x5982;&#x679C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x65B0;&#x914D;&#x7F6E;&#x7684;&#x96C6;&#x7FA4;&#xFF0C;&#x5219;&#x5728;&#x5176;&#x4E2D;&#x4E00;&#x53F0;&#x4E3B;&#x8282;&#x70B9;&#x4E0A; (master) &#x6267;&#x884C; hadoop namenode -format &#x547D;&#x4EE4;&#x3002;&#xFF08;<strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x8BE5;&#x6B65;&#x9AA4;&#x7531;&#x59CB;&#x81F3;&#x7EC8;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x6267;&#x884C;&#x591A;&#x6B21;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x96C6;&#x7FA4;&#x542F;&#x52A8;&#x4E0D;&#x4E86;&#xFF09;</p>
+<pre><code>hadoop namenode -format
+</code></pre><p>&#x683C;&#x5F0F;&#x5316;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6839;&#x636E; core-site.xml &#x4E2D;&#x7684; hadoop.tmp.dir &#x914D;&#x7F6E;&#x751F;&#x6210;&#x7684;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x91CC;&#x914D;&#x7F6E;&#x7684;&#x662F; /data/hadoop/tmp&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5176;&#x8FDC;&#x7A0B;&#x4F20;&#x8F93;&#x81F3;&#x53E6;&#x4E00;&#x53F0;&#x4E3B;&#x8282;&#x70B9; hadoop-master-stby &#x7684; /data/hadoop/ &#x4E0B;&#x3002;</p>
+<pre><code>scp -r /data/hadoop/tmp/ hadoop@hadoop-master-stby:/data/hadoop
+</code></pre><p>4.&#x542F;&#x52A8; NameNode&#x3001;&#x540C;&#x6B65;&#x5907;&#x7528; NameNode&#x3001;&#x542F;&#x52A8;&#x5907;&#x7528; NameNode &#xFF08;hadoop-master &#x548C; hadoop-master-stby&#xFF09;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$./hadoop-daemon.sh start namenode
+#&#x540C;&#x6B65;&#x5907;&#x7528; NameNode &#x3001;&#x542F;&#x52A8;&#x5907;&#x7528; NameNode
+[hadoop@hadoop-master-stby /home/hadoop/app/hadoop-2.7.4/bin]$./hdfs namenode -bootstrapStandby 
+[hadoop@hadoop-master-stby /home/hadoop/app/hadoop-2.7.4/sbin]$./hadoop-daemon.sh start namenode
+</code></pre><p>5.&#x683C;&#x5F0F;&#x5316; ZKFC &#xFF08;hadoop-master&#xFF09;</p>
+<p>&#x53EA;&#x9700;&#x5728; hadoop-master &#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x6267;&#x884C; hdfs zkfc -formatZK &#xFF0C;&#x683C;&#x5F0F;&#x5316; zkfc</p>
+<p>&#xFF08;<strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x8BE5;&#x6B65;&#x9AA4;&#x53EA;&#x9700;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x914D;&#x7F6E; HA &#x67B6;&#x6784;&#x65F6;&#x4F7F;&#x7528;&#xFF0C;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x96C6;&#x7FA4;&#x65E5;&#x540E;&#x7684;&#x542F;&#x52A8;&#x53EF;&#x63A0;&#x8FC7;&#x8BE5;&#x6B65;&#x9AA4;&#xFF09;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/bin]$hdfs zkfc -formatZK
+17/11/07 15:14:44 INFO tools.DFSZKFailoverController: Failover controller configured for NameNode NameNode at hadoop-master/10.181.0.11:9000
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Client environment:host.name=hadoop-master
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Client environment:java.version=1.8.0_151
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre
+....
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=hadoop-slave01:2181,hadoop-slave02:2181,hadoop-slave03:2181 sessionTimeout=5000 watcher=org.apache.hadoop.ha.ActiveStandbyElector$WatcherWithClientRef@158d2680
+17/11/07 15:14:44 INFO zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave03/10.181.10.72:2181. Will not attempt to authenticate using SASL (unknown error)
+17/11/07 15:14:44 INFO zookeeper.ClientCnxn: Socket connection established to hadoop-slave03/10.181.10.72:2181, initiating session
+17/11/07 15:14:44 INFO zookeeper.ClientCnxn: Session establishment complete on server hadoop-slave03/10.181.10.72:2181, sessionid = 0x35f952a96470000, negotiated timeout = 5000
+17/11/07 15:14:44 INFO ha.ActiveStandbyElector: Successfully created /hadoop-ha/cluster in ZK.
+17/11/07 15:14:44 INFO ha.ActiveStandbyElector: Session connected.
+17/11/07 15:14:44 INFO zookeeper.ZooKeeper: Session: 0x35f952a96470000 closed
+17/11/07 15:14:44 INFO zookeeper.ClientCnxn: EventThread shut down
+</code></pre><p>6.&#x542F;&#x52A8; DFSZKFailoverController &#x6765;&#x76D1;&#x63A7; NameNode &#x72B6;&#x6001; &#xFF08;hadoop-master &#x548C; hadoop-master-stby&#xFF09;</p>
+<p>&#x5728; hadoop-master &#x548C; hadoop-master-stby &#x4E2D;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165; hadoop-daemon.sh start zkfc &#x542F;&#x52A8; zkfc &#xFF0C;&#x540C;&#x7406;&#xFF0C;&#x4F7F;&#x7528; jps &#x68C0;&#x9A8C;DFSZKFailoverController &#x8FDB;&#x7A0B;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x6210;&#x529F;&#x542F;&#x52A8; zkfc &#x4E86;&#x3002;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$./hadoop-daemon.sh start zkfc  
+starting zkfc, logging to /var/log/hadoop/hadoop-hadoop-zkfc-hadoop-master.out
+
+[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$jps
+8554 DFSZKFailoverController
+8604 Jps
+</code></pre><p>7.&#x542F;&#x52A8; DataNode &#xFF08;hadoop-master&#xFF09;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$./hadoop-daemons.sh start datanode
+</code></pre><p>8.&#x542F;&#x52A8; Yarn &#xFF08;hadoop-master &#x548C; hadoop-master-stby&#xFF09;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$./start-yarn.sh 
+[hadoop@hadoop-master-stby /home/hadoop/app/hadoop-2.7.4/sbin]$./yarn-daemon.sh start resourcemanager
+</code></pre><p>9.&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x670D;&#x52A1;</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA; hadoop-master &#x7684; namenode &#x662F;&#x5904;&#x4E8E;&#x4E00;&#x79CD; active &#x72B6;&#x6001;&#xFF0C;&#x90A3;&#x4E48; hadoop-master-stby &#x5E94;&#x8BE5;&#x662F;&#x5904;&#x4E8E;standby &#x72B6;&#x6001;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop]$hdfs haadmin -getServiceState nn1
+active
+[hadoop@hadoop-master /home/hadoop]$hdfs haadmin -getServiceState nn2
+standby
+</code></pre><p>&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>http://140.143.190.31:50070/           hadoop-master      active
+http://140.143.184.98:50070/           hadoop-master-stby standby
+</code></pre><p><img src="../assets/ha-active.png" alt=""></p>
+<p><img src="../assets/ha-standby.png" alt="">&#x5728;&#x4E0A;&#x8FF0;&#x6210;&#x529F;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x53BB; hadoop-master &#x91CC;&#x9762;&#x628A;&#x8FD9;&#x4E2A; namenode &#x8FDB;&#x7A0B;&#x6740;&#x6B7B;&#x7684;&#x8BDD;&#xFF0C;&#x4F7F;&#x7528; jps &#x53EF;&#x4EE5;&#x68C0;&#x6D4B; namenode &#x8FDB;&#x7A0B;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x4F1A;&#x53D1;&#x73B0; hadoop-master-stby &#x81EA;&#x52A8;&#x5207;&#x6362;&#x4E3A; Active&#xFF0C;hadoop-master &#x53D8;&#x6210;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x3002;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop]$jps
+25745 DFSZKFailoverController
+28084 ResourceManager
+25436 NameNode
+9837 Jps
+
+[hadoop@hadoop-master /home/hadoop]$kill -9 25436
+
+[hadoop@hadoop-master /home/hadoop]$jps
+25745 DFSZKFailoverController
+28084 ResourceManager
+10070 Jps
+
+[hadoop@hadoop-master /home/hadoop]$hdfs haadmin -getServiceState nn1
+17/11/08 08:22:26 INFO ipc.Client: Retrying connect to server: hadoop-master/10.181.0.11:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=1, sleepTime=1000 MILLISECONDS)
+Operation failed: Call From hadoop-master/10.181.0.11 to hadoop-master:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+[hadoop@hadoop-master /home/hadoop]$hdfs haadmin -getServiceState nn2
+active
+</code></pre><p><img src="../assets/ha-standby-to-active.png" alt="">&#x91CD;&#x65B0;&#x542F;&#x52A8; hadoop-master &#x7684; namenode&#xFF0C;hadoop-master &#x4F1A;&#x53D8;&#x6210; standby &#x72B6;&#x6001;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$./hadoop-daemon.sh start namenode
+starting namenode, logging to /var/log/hadoop/hadoop-hadoop-namenode-hadoop-master.out
+
+[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$hdfs haadmin -getServiceState nn1
+standby
+[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$hdfs haadmin -getServiceState nn2
+active
+</code></pre><p>&#x67E5;&#x770B; yarn &#x72B6;&#x6001;</p>
+<pre><code>[hadoop@hadoop-master /root]$yarn rmadmin -getServiceState rm1
+active
+[hadoop@hadoop-master /root]$yarn rmadmin -getServiceState rm2
+standby
+</code></pre><pre><code>http://140.143.190.31:8088/
+
+&#x8F93;&#x5165;&#xFF1A;http://140.143.184.98:8088/ &#x4F1A;&#x8DF3;&#x8F6C;&#x5230; http://hadoop-master:8088/cluster
+</code></pre><p><img src="../assets/ha-yarn.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hadoop-ha-da-jian.html" class="navigation navigation-prev " aria-label="Previous page: Hadoop HA 搭建">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hadoop-ha-fei-chu-ci-qi-dong.html" class="navigation navigation-next " aria-label="Next page: Hadoop HA 非初次启动">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hadoop HA 初次启动","level":"1.1.6.10","depth":3,"next":{"title":"Hadoop HA 非初次启动","level":"1.1.6.11","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-fei-chu-ci-qi-dong.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-fei-chu-ci-qi-dong.md","articles":[]},"previous":{"title":"Hadoop HA 搭建","level":"1.1.6.9","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-da-jian.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-da-jian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-chu-ci-qi-dong.md","mtime":"2017-11-08T03:02:09.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-11-08T04:00:30.420Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

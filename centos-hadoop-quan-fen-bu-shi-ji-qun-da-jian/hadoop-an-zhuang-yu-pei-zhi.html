@@ -1,0 +1,689 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Hadoop 安装与配置 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pei-zhi-ji-qun.html" />
+    
+    
+    <link rel="prev" href="an-zhuang-openjdk.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Centos Hadoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../centos-jdk-an-zhuang.html">
+            
+                <a href="../centos-jdk-an-zhuang.html">
+            
+                    
+                    Centos JDK 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../centos-hadoop-an-zhuang.html">
+            
+                <a href="../centos-hadoop-an-zhuang.html">
+            
+                    
+                    Centos Hadoop 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                <a href="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                    
+                    Centos 配置及检查SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                <a href="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                    
+                    Centos 伪分布模式配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                <a href="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                    
+                    Centos Hadoop 格式化及启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                <a href="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                    
+                    Centos Hadoop 全分布式集群搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="chuang-jian-xin-yong-hu.html">
+            
+                <a href="chuang-jian-xin-yong-hu.html">
+            
+                    
+                    创建新用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                <a href="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                    
+                    设置主机名与域名解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="ssh-mian-mi-deng-lu.html">
+            
+                <a href="ssh-mian-mi-deng-lu.html">
+            
+                    
+                    SSH 免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="an-zhuang-openjdk.html">
+            
+                <a href="an-zhuang-openjdk.html">
+            
+                    
+                    安装 OpenJDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.6.5" data-path="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                <a href="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                    
+                    Hadoop 安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="pei-zhi-ji-qun.html">
+            
+                <a href="pei-zhi-ji-qun.html">
+            
+                    
+                    配置集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.7" data-path="ji-qun-cao-zuo.html">
+            
+                <a href="ji-qun-cao-zuo.html">
+            
+                    
+                    集群操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.8" data-path="an-zhuang-zookeeper.html">
+            
+                <a href="an-zhuang-zookeeper.html">
+            
+                    
+                    安装 Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.9" data-path="hadoop-ha-da-jian.html">
+            
+                <a href="hadoop-ha-da-jian.html">
+            
+                    
+                    Hadoop HA 搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.10" data-path="hadoop-ha-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.11" data-path="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 非初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.12" data-path="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                <a href="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                    
+                    常见错误及解决方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                <a href="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                    
+                    Centos 常用配置及命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Hadoop 安装与配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hadoop-&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;">Hadoop &#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;</h1>
+<p>1.&#x5728; hadoop-master &#x8282;&#x70B9;&#x4E0A;&#x4F7F;&#x7528; hadoop &#x7528;&#x6237;&#x4E0B;&#x8F7D; hadoop&#xFF0C;&#x76EE;&#x524D;&#x662F;&#x7528;&#x7684;&#x662F; hadoop 2.7.4&#x3002;</p>
+<pre><code>#mkdir ~/app
+#cd ~/app
+[hadoop@hadoop-slave01 /home/hadoop/app]#wget http://mirror.bit.edu.cn/apache/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz 
+
+[hadoop@hadoop-slave01 /home/hadoop/app]#ls -la
+total 260708
+drwxr-xr-x 2 root   root        4096 Oct 21 17:11 .
+drwx------ 6 hadoop hadoop      4096 Oct 20 23:50 ..
+-rw-r--r-- 1 hadoop hadoop   266688029 Aug  6 16:15 hadoop-2.7.4.tar.gz
+</code></pre><p>&#x8FD0;&#x884C;&#x5B8C;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;hadoop-2.7.4.tar.gz &#x6587;&#x4EF6;&#x5C06;&#x4F1A;&#x4FDD;&#x5B58;&#x5728;/home/hadoop/app&#x91CC;&#x9762;&#xFF0C;&#x8BF7;&#x89E3;&#x538B;&#x5B83;&#xFF0C;&#x7136;&#x540E;&#x5220;&#x9664; hadoop-2.7.4 &#x5B89;&#x88C5;&#x5305;</p>
+<pre><code>#tar -xzvf hadoop-2.7.4.tar.gz
+#rm -rf hadoop-2.7.4.tar.gz
+</code></pre><p>2.&#x7528; root &#x7528;&#x6237;&#xFF0C;&#x5728; /data &#x4E0B;&#x521B;&#x5EFA; hadoop &#x76EE;&#x5F55;&#xFF0C;&#x7136;&#x540E;&#x628A; /data/hadoop &#x6587;&#x4EF6;&#x5939;&#x7684;&#x8BFB;&#x6743;&#x9650;&#x5206;&#x914D;&#x7ED9; hadoop &#x7528;&#x6237;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B; dfs &#x548C; tmp &#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;dfs &#x4E2D;&#x5305;&#x542B; name &#x548C; data &#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#xFF08;&#x914D;&#x7F6E;&#x4E2D;&#x4F1A;&#x6307;&#x5B9A;&#x8FD9;&#x4E9B;&#x76EE;&#x5F55;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x4FDD;&#x8BC1;&#x8BE5;&#x76EE;&#x5F55;&#x7684;&#x6240;&#x5C5E;&#x548C;&#x6743;&#x9650;&#x5F00;&#x653E;</p>
+<pre><code>#mkdir -p /data/hadoop/dfs/name
+#mkdir -p /data/hadoop/dfs/data
+#mkdir -p /data/hadoop/tmp
+#&#x8BBE;&#x7F6E;&#x6240;&#x5C5E;
+#chown -R hadoop:hadoop /data
+#&#x8BBE;&#x7F6E;&#x6743;&#x9650;
+#chmod -R 777 /data/hadoop
+
+[root@hadoop-slave01 /data]#ls -la
+total 36
+drwxr-xr-x   4 hadoop hadoop  4096 Oct 21 00:02 .
+dr-xr-xr-x. 20 root   root    4096 Oct 21 00:02 ..
+drwxrwxrwx   4 hadoop hadoop  4096 Oct 20 23:58 hadoop
+drwx------   2 hadoop hadoop 16384 Oct 12 18:08 lost+found
+</code></pre><p>3.&#x7528; root &#x7528;&#x6237;&#xFF0C;&#x4FEE;&#x6539; /tmp &#x6587;&#x4EF6;&#x5939;&#x7684;&#x6743;&#x9650;&#x4E3A; 777&#xFF0C;&#x5728;&#x6240;&#x6709;&#x8282;&#x70B9;&#x5747;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;</p>
+<pre><code>#chmod 777 /tmp
+[root@hadoop-slave01 /]#ls -la | grep tmp
+drwxrwxrwx. 18 root root  4096 Oct 22 16:07 tmp
+</code></pre><p>4.&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;</p>
+<ul>
+<li>&#x7F16;&#x8F91; /etc/profile &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code>#vim /etc/profile
+...
+export HADOOP_HOME=/home/hadoop/app/hadoop-2.7.4
+export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
+...
+</code></pre><ul>
+<li>&#x4F7F;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x751F;&#x6548;</li>
+</ul>
+<p><code>#source /etc/profile</code></p>
+<ul>
+<li>&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x751F;&#x6548;</li>
+</ul>
+<pre><code>[root@hadoop-master /root]#hadoop version
+Hadoop 2.7.4
+Subversion https://shv@git-wip-us.apache.org/repos/asf/hadoop.git -r cd915e1e8d9d0131462a0b7301586c175728a282
+Compiled by kshvachk on 2017-08-01T00:29Z
+Compiled with protoc 2.5.0
+From source with checksum 50b0468318b4ce9bd24dc467b7ce1148
+This command was run using /home/hadoop/app/hadoop-2.7.4/share/hadoop/common/hadoop-common-2.7.4.jar
+</code></pre><p>5.&#x7F16;&#x8F91; hadoop-env.sh &#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x91CC;&#x9762;&#x627E;&#x5230;JAVA_HOME&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; JDK &#x6240;&#x5728;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</p>
+<pre><code>#su hadoop
+#cd ~/app/hadoop-2.7.4/etc/hadoop/
+#vim hadoop-env.sh
+...
+# The java implementation to use.
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64
+...
+</code></pre><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Hadoop &#x751F;&#x6210;&#x7684;&#x7CFB;&#x7EDF;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x5728;  $HADOOP_HOME/logs &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5EFA;&#x8BAE;&#x4FEE;&#x6539;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F7F;&#x4E4B;&#x72EC;&#x7ACB;&#x4E8E; Hadoop &#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF0C;&#x4FBF;&#x4E8E; Hadoop &#x7248;&#x672C;&#x5347;&#x7EA7;&#x540E;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code>&#x5207;&#x6362; root &#x7528;&#x6237;&#xFF0C;&#x5728; /var/log/ &#x4E0B;&#x521B;&#x5EFA; hadoop &#x76EE;&#x5F55;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;
+#mkdir /var/log/hadoop/
+&#x8BBE;&#x7F6E;&#x6240;&#x5C5E;
+#chown -R hadoop:hadoop /var/log/hadoop/
+
+#vim hadoop-env.sh
+..
+export HADOOP_LOG_DIR=/var/log/hadoop
+...
+</code></pre><p>6.&#x7F16;&#x8F91; core-site.xml</p>
+<p>hadoop.tmp.dir &#x662F; hadoop &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4F9D;&#x8D56;&#x7684;&#x57FA;&#x7840;&#x914D;&#x7F6E;&#xFF0C;&#x5F88;&#x591A;&#x8DEF;&#x5F84;&#x90FD;&#x4F9D;&#x8D56;&#x5B83;&#x3002;&#x5B83;&#x9ED8;&#x8BA4;&#x7684;&#x4F4D;&#x7F6E;&#x662F;&#x5728; /tmp/{$user} &#x4E0B;&#x9762;&#xFF0C;&#x4F46;&#x662F;&#x5728; /tmp &#x8DEF;&#x5F84;&#x4E0B;&#x7684;&#x5B58;&#x50A8;&#x662F;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684; /tmp &#x6587;&#x4EF6;&#x6BCF;&#x6B21;&#x91CD;&#x65B0;&#x5F00;&#x673A;&#x4F1A;&#x88AB;&#x6E05;&#x7A7A;&#xFF0C;&#x4E0E;&#x6B64;&#x540C;&#x65F6; namenode &#x7684;&#x683C;&#x5F0F;&#x5316;&#x4FE1;&#x606F;&#x5C31;&#x4F1A;&#x4E22;&#x5931;&#x3002;</p>
+<pre><code>#cd ~/app/hadoop-2.7.4/etc/hadoop/
+#vim core-site.xml
+
+&lt;configuration&gt;
+        &lt;property&gt;
+                &lt;name&gt;fs.defaultFS&lt;/name&gt;
+                &lt;value&gt;hdfs://hadoop-master:9000/&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+                &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+                &lt;value&gt;/data/hadoop/tmp&lt;/value&gt;
+        &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre><p>7.&#x7F16;&#x8F91; hdfs-site.xml</p>
+<ul>
+<li><p><strong>dfs.namenode.name.dir </strong><br>&#x672C;&#x5730;&#x78C1;&#x76D8;&#x76EE;&#x5F55;&#xFF0C;NN&#x5B58;&#x50A8;fsimage&#x6587;&#x4EF6;&#x7684;&#x5730;&#x65B9;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x6309;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x76EE;&#x5F55;&#x5217;&#x8868;&#xFF0C;fsimage&#x6587;&#x4EF6;&#x4F1A;&#x5B58;&#x50A8;&#x5728;&#x5168;&#x90E8;&#x76EE;&#x5F55;&#xFF0C;&#x5197;&#x4F59;&#x5B89;&#x5168;&#x3002;<em>&#x8FD9;&#x91CC;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#x8BBE;&#x5B9A;&#xFF0C;&#x6700;&#x597D;&#x5728;&#x591A;&#x4E2A;&#x78C1;&#x76D8;&#xFF0C;&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x78C1;&#x76D8;&#x6545;&#x969C;&#xFF0C;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x7CFB;&#x7EDF;&#x6545;&#x969C;&#xFF0C;&#x4F1A;&#x8DF3;&#x8FC7;&#x574F;&#x78C1;&#x76D8;&#x3002;&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x4E86;HA&#xFF0C;&#x5EFA;&#x8BAE;&#x4EC5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x3002;&#x5982;&#x679C;&#x7279;&#x522B;&#x5728;&#x610F;&#x5B89;&#x5168;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;2&#x4E2A;</em></p>
+</li>
+<li><p><strong>dfs.datanode.data.dir                                                                                                              
+</strong>&#x672C;&#x5730;&#x78C1;&#x76D8;&#x76EE;&#x5F55;&#xFF0C;HDFS&#x6570;&#x636E;&#x5E94;&#x8BE5;&#x5B58;&#x50A8;Block&#x7684;&#x5730;&#x65B9;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x76EE;&#x5F55;&#x5217;&#x8868;&#xFF08;&#x5178;&#x578B;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x76EE;&#x5F55;&#x88AB;&#x8F6E;&#x6D41;&#x4F7F;&#x7528;&#xFF0C;&#x4E00;&#x4E2A;&#x5757;&#x5B58;&#x50A8;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x4E0B;&#x4E00;&#x4E2A;&#x5757;&#x5B58;&#x50A8;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x4F9D;&#x6B21;&#x5FAA;&#x73AF;&#x3002;&#x6BCF;&#x4E2A;&#x5757;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x673A;&#x5668;&#x4E0A;&#x4EC5;&#x5B58;&#x50A8;&#x4E00;&#x4EFD;&#x3002;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x76EE;&#x5F55;&#x88AB;&#x5FFD;&#x7565;&#x3002;&#x5FC5;&#x987B;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5426;&#x5219;&#x88AB;&#x89C6;&#x4E3A;&#x4E0D;&#x5B58;&#x5728;&#x3002;</p>
+</li>
+</ul>
+<pre><code>#cd ~/app/hadoop-2.7.4/etc/hadoop/
+#vim hdfs-site.xml
+
+&lt;configuration&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;
+                &lt;value&gt;/data/hadoop/dfs/name&lt;/value&gt;
+        &lt;/property&gt;
+
+        &lt;property&gt;
+                &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;
+                &lt;value&gt;/data/hadoop/dfs/data&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;!-- &#x6307;&#x5B9A; DataNode &#x5B58;&#x50A8; Block &#x7684;&#x526F;&#x672C;&#x6570;&#x91CF;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;3&#x4E2A;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x6709;3&#x4E2A; DataNode&#xFF0C;&#x8BE5;&#x503C;&#x4E0D;&#x5927;&#x4E8E;3&#x5373;&#x53EF;&#x3002;--&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.replication&lt;/name&gt;
+                &lt;value&gt;3&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;!-- &#x7531;&#x4E8E;&#x91C7;&#x7528; HA &#x6240;&#x4EE5;&#x65E0;&#x9700;&#x914D;&#x7F6E; SecondaryNameNode
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.secondary.http-address&lt;/name&gt;
+                &lt;value&gt;node1:50090&lt;/value&gt;
+        &lt;/property&gt;
+        --&gt;
+&lt;/configuration&gt;
+</code></pre><p>8.&#x7F16;&#x8F91; mapred-site.xml&#xFF0C;&#x76EE;&#x5F55;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A; mapred-site.xml.template &#x6587;&#x4EF6;&#xFF0C;&#x590D;&#x5236;&#x4E00;&#x4E2A;&#x5E76;&#x91CD;&#x547D;&#x540D;&#x4E3A; mapred-site.xml &#xFF0C;&#x7136;&#x540E;&#x5C06;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x4E3A;</p>
+<pre><code>#cd ~/app/hadoop-2.7.4/etc/hadoop/
+#cp mapred-site.xml.template mapred-site.xml
+#vi mapred-site.xml
+
+&lt;configuration&gt;
+        &lt;property&gt;
+                &lt;name&gt;mapreduce.framework.name&lt;/name&gt;
+                &lt;value&gt;yarn&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;!-- Hadoop&#x5386;&#x53F2;&#x670D;&#x52A1;&#x5668;
+        &lt;property&gt;
+            &lt;name&gt;mapreduce.jobhistory.address&lt;/name&gt;
+            &lt;value&gt;hadoop-master:10020&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+            &lt;name&gt;mapreduce.jobhistory.webapp.address&lt;/name&gt;
+            &lt;value&gt;hadoop-master:19888&lt;/value&gt;
+        &lt;/property&gt;
+        --&gt;
+&lt;/configuration&gt;
+</code></pre><p>9.&#x7F16;&#x8F91; yarn-site.xml</p>
+<pre><code>#cd ~/app/hadoop-2.7.4/etc/hadoop/
+#vim yarn-site.xml
+
+&lt;configuration&gt;
+
+&lt;!-- Site specific YARN configuration properties --&gt;
+        &lt;property&gt;
+                &lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;
+                &lt;value&gt;hadoop-master&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+                &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+                &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
+        &lt;/property&gt;
+
+&lt;/configuration&gt;
+</code></pre><p>10.&#x8BBE;&#x7F6E; pid &#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;</p>
+<p>&#x57FA;&#x4E8E;java&#x5F00;&#x53D1;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x60F3;&#x8981;&#x505C;&#x6B62;&#x7A0B;&#x5E8F;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x8FDB;&#x7A0B; pid &#x6765;&#x786E;&#x5B9A;&#xFF0C;&#x800C; hadoop &#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F1A;&#x628A; pid &#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x5728; Linux &#x4E0A;&#x7684; /tmp &#x76EE;&#x5F55;&#x7684;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8FDB;&#x7A0B;&#x540D;&#x547D;&#x4EE4;&#x89C4;&#x5219;&#x4E00;&#x822C;&#x662F;  &#x6846;&#x67B6;&#x540D;-&#x7528;&#x6237;&#x540D;-&#x89D2;&#x8272;&#x540D;.pid&#xFF0C;&#x800C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;linux &#x7684; tmp &#x91CC;&#x9762;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x4E00;&#x5929;&#x4F1A;&#x5220;&#x9664;&#x4E00;&#x6B21;&#xFF0C;&#x6240;&#x4EE5;&#x628A; pid &#x6587;&#x4EF6;&#x653E;&#x5728;&#x8FD9;&#x91CC;&#x9762;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x957F;&#x4E45;&#x4E4B;&#x8BA1;&#xFF0C;&#x4E3A;&#x4E86;&#x5B89;&#x5168;&#x8D77;&#x89C1;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x76EE;&#x5F55;&#x4E0B;&#x6700;&#x597D;&#xFF0C;&#x5F53;&#x7136;&#x4E0D;&#x80FD;&#x653E;&#x5728; /tmp &#x4E0B;</p>
+<pre><code>#su hadoop
+#mkdir -p /data/hadoop/pid
+</code></pre><p><strong>&#x4FEE;&#x6539; hadoop-env.sh</strong></p>
+<pre><code>#cd ~/app/hadoop-2.7.4/etc/hadoop/
+#vim hadoop-env.sh
+export HADOOP_PID_DIR=/data/hadoop/pid
+export HADOOP_SECURE_DN_PID_DIR=/data/hadoop/pid
+
+&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#xFF0C;&#x5F71;&#x54CD; NameNode DataNode SecondaryNameNode &#x8FDB;&#x7A0B;pid&#x5B58;&#x50A8;
+</code></pre><p><strong>&#x4FEE;&#x6539; mapred-env.sh </strong></p>
+<pre><code>#vim mapred-env.sh
+export HADOOP_MAPRED_PID_DIR=/data/hadoop/pid
+
+&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#xFF0C;&#x5F71;&#x54CD; JobHistoryServer &#x8FDB;&#x7A0B;pid&#x5B58;&#x50A8;
+</code></pre><p><strong>&#x4FEE;&#x6539; yarn-env.sh </strong></p>
+<pre><code>#vim yarn-env.sh
+export YARN_PID_DIR=/data/hadoop/pid
+
+&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#xFF0C;&#x5F71;&#x54CD; NodeManager ResourceManager &#x8FDB;&#x7A0B;pid&#x5B58;&#x50A8;
+</code></pre><p>&#x6821;&#x9A8C;</p>
+<pre><code>[hadoop@hadoop-master /home/hadoop/app/hadoop-2.7.4/sbin]$cd /data/hadoop/pid
+[hadoop@hadoop-master /data/hadoop/pid]$ls -la
+total 20
+drwxr-xr-x 2 hadoop hadoop 4096 Oct 22 16:16 .
+drwxrwxrwx 5 hadoop hadoop 4096 Oct 22 16:08 ..
+-rw-r--r-- 1 hadoop hadoop    6 Oct 22 16:14 hadoop-hadoop-namenode.pid
+-rw-r--r-- 1 hadoop hadoop    6 Oct 22 16:14 hadoop-hadoop-secondarynamenode.pid
+-rw-r--r-- 1 hadoop hadoop    6 Oct 22 16:16 yarn-hadoop-resourcemanager.pid
+
+[hadoop@hadoop-slave01 /data/hadoop/pid]$ls -la
+total 16
+drwxrwxr-x 2 hadoop hadoop 4096 Oct 22 16:16 .
+drwxr-xr-x 5 hadoop hadoop 4096 Oct 22 16:08 ..
+-rw-rw-r-- 1 hadoop hadoop    5 Oct 22 16:14 hadoop-hadoop-datanode.pid
+-rw-rw-r-- 1 hadoop hadoop    5 Oct 22 16:16 yarn-hadoop-nodemanager.pid
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="an-zhuang-openjdk.html" class="navigation navigation-prev " aria-label="Previous page: 安装 OpenJDK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pei-zhi-ji-qun.html" class="navigation navigation-next " aria-label="Next page: 配置集群">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hadoop 安装与配置","level":"1.1.6.5","depth":3,"next":{"title":"配置集群","level":"1.1.6.6","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/pei-zhi-ji-qun.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/pei-zhi-ji-qun.md","articles":[]},"previous":{"title":"安装 OpenJDK","level":"1.1.6.4","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/an-zhuang-openjdk.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/an-zhuang-openjdk.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-an-zhuang-yu-pei-zhi.md","mtime":"2017-11-06T13:06:35.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-11-08T04:00:30.420Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

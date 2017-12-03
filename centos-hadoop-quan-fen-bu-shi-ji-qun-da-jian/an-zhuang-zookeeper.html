@@ -1,0 +1,646 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>安装 Zookeeper · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hadoop-ha-da-jian.html" />
+    
+    
+    <link rel="prev" href="ji-qun-cao-zuo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Centos Hadoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../centos-jdk-an-zhuang.html">
+            
+                <a href="../centos-jdk-an-zhuang.html">
+            
+                    
+                    Centos JDK 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../centos-hadoop-an-zhuang.html">
+            
+                <a href="../centos-hadoop-an-zhuang.html">
+            
+                    
+                    Centos Hadoop 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                <a href="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                    
+                    Centos 配置及检查SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                <a href="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                    
+                    Centos 伪分布模式配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                <a href="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                    
+                    Centos Hadoop 格式化及启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                <a href="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                    
+                    Centos Hadoop 全分布式集群搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="chuang-jian-xin-yong-hu.html">
+            
+                <a href="chuang-jian-xin-yong-hu.html">
+            
+                    
+                    创建新用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                <a href="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                    
+                    设置主机名与域名解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="ssh-mian-mi-deng-lu.html">
+            
+                <a href="ssh-mian-mi-deng-lu.html">
+            
+                    
+                    SSH 免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="an-zhuang-openjdk.html">
+            
+                <a href="an-zhuang-openjdk.html">
+            
+                    
+                    安装 OpenJDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                <a href="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                    
+                    Hadoop 安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="pei-zhi-ji-qun.html">
+            
+                <a href="pei-zhi-ji-qun.html">
+            
+                    
+                    配置集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.7" data-path="ji-qun-cao-zuo.html">
+            
+                <a href="ji-qun-cao-zuo.html">
+            
+                    
+                    集群操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.6.8" data-path="an-zhuang-zookeeper.html">
+            
+                <a href="an-zhuang-zookeeper.html">
+            
+                    
+                    安装 Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.9" data-path="hadoop-ha-da-jian.html">
+            
+                <a href="hadoop-ha-da-jian.html">
+            
+                    
+                    Hadoop HA 搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.10" data-path="hadoop-ha-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.11" data-path="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 非初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.12" data-path="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                <a href="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                    
+                    常见错误及解决方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                <a href="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                    
+                    Centos 常用配置及命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >安装 Zookeeper</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="zookeeper-&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;">Zookeeper &#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;</h1>
+<p><strong>ZooKeeper &#x662F;&#x5206;&#x5E03;&#x5F0F;&#x73AF;&#x5883;&#x4E0B;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x63A8;&#x9001;&#x3001;&#x5206;&#x5E03;&#x5F0F; Leader &#x9009;&#x4E3E;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x7B49;&#x529F;&#x80FD;&#x3002;</strong></p>
+<p>1.&#x5728; hadoop-slave01 &#x8282;&#x70B9;&#x4E0A;&#x4F7F;&#x7528; hadoop &#x7528;&#x6237;&#x4E0B;&#x8F7D; Zookeeper&#xFF0C;&#x76EE;&#x524D;&#x662F;&#x7528;&#x7684;&#x662F; zookeeper 3.4.10 stable&#x3002;</p>
+<pre><code>[hadoop@hadoop-slave01 /home/hadoop/app]$wget http://mirrors.shuosc.org/apache/zookeeper/stable/zookeeper-3.4.10.tar.gz
+--2017-11-05 23:26:05--  http://mirrors.shuosc.org/apache/zookeeper/stable/zookeeper-3.4.10.tar.gz
+Resolving mirrors.shuosc.org (mirrors.shuosc.org)... 202.121.199.235, 2001:da8:8006:11:225:90ff:fee1:813e
+Connecting to mirrors.shuosc.org (mirrors.shuosc.org)|202.121.199.235|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35042811 (33M) [application/x-gzip]
+Saving to: ookeeper-3.4.10.tar.gz
+
+100%[===========================================================================================================&gt;] 35,042,811  2.43MB/s   in 13s    
+
+2017-11-05 23:26:18 (2.53 MB/s) - ookeeper-3.4.10.tar.gzsaved [35042811/35042811]
+
+
+[hadoop@hadoop-slave01 /home/hadoop/app]$ls -la
+total 34276
+drwxr-xr-x  3 hadoop hadoop     4096 Nov  5 23:26 .
+drwx------  7 hadoop hadoop     4096 Oct 22 16:11 ..
+drwxr-xr-x 11 hadoop hadoop     4096 Oct 22 08:34 hadoop-2.7.4
+-rw-r--r--  1 hadoop hadoop 35042811 Jun 20 19:33 zookeeper-3.4.10.tar.gz
+</code></pre><p>&#x8FD0;&#x884C;&#x5B8C;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;zookeeper-3.4.10.tar.gz &#x6587;&#x4EF6;&#x5C06;&#x4F1A;&#x4FDD;&#x5B58;&#x5728;~/app&#x91CC;&#x9762;&#xFF0C;&#x8BF7;&#x89E3;&#x538B;&#x5B83;&#xFF0C;&#x7136;&#x540E;&#x5220;&#x9664; zookeeper-3.4.10.tar.gz &#x5B89;&#x88C5;&#x5305;</p>
+<pre><code>#tar -xzvf zookeeper-3.4.10.tar.gz
+#rm -rf zookeeper-3.4.10.tar.gz
+
+[hadoop@hadoop-slave01 /home/hadoop/app]$ls -la
+total 16
+drwxr-xr-x  4 hadoop hadoop 4096 Nov  5 23:27 .
+drwx------  7 hadoop hadoop 4096 Oct 22 16:11 ..
+drwxr-xr-x 11 hadoop hadoop 4096 Oct 22 08:34 hadoop-2.7.4
+drwxr-xr-x 10 hadoop hadoop 4096 Mar 23  2017 zookeeper-3.4.1
+</code></pre><p>2.&#x8FDB;&#x5165;&#x5230;&#x5176;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x7684; conf &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x590D;&#x5236; zoo_sample.cfg &#x6587;&#x4EF6;&#x7684;&#x5E76;&#x547D;&#x540D;&#x4E3A;&#x4E3A; zoo.cfg:</p>
+<pre><code>$cd zookeeper-3.4.10/conf/
+$cp zoo_sample.cfg zoo.cfg
+
+[hadoop@hadoop-slave01 /home/hadoop/app/zookeeper-3.4.10/conf]$ls -la
+total 24
+drwxr-xr-x  2 hadoop hadoop 4096 Nov  5 23:36 .
+drwxr-xr-x 10 hadoop hadoop 4096 Mar 23  2017 ..
+-rw-r--r--  1 hadoop hadoop  535 Mar 23  2017 configuration.xsl
+-rw-r--r--  1 hadoop hadoop 2161 Mar 23  2017 log4j.properties
+-rw-r--r--  1 hadoop hadoop  922 Nov  5 23:36 zoo.cfg
+-rw-r--r--  1 hadoop hadoop  922 Mar 23  2017 zoo_sample.cfg
+</code></pre><p>3.&#x914D;&#x7F6E; dataDir &#x548C; dataLogDir</p>
+<p>dataLogDir &#x5982;&#x679C;&#x6CA1;&#x63D0;&#x4F9B;&#x7684;&#x8BDD;&#x4F7F;&#x7528;&#x7684;&#x5219;&#x662F; dataDir&#x3002;zookeeper &#x7684;&#x6301;&#x4E45;&#x5316;&#x90FD;&#x5B58;&#x50A8;&#x5728;&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x91CC;&#x3002;dataLogDir &#x91CC;&#x662F;&#x653E;&#x5230;&#x7684;&#x987A;&#x5E8F;&#x65E5;&#x5FD7;(WAL)&#x3002;&#x800C; dataDir &#x91CC;&#x653E;&#x7684;&#x662F;&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684; snapshot&#xFF0C;&#x4FBF;&#x4E8E;&#x5FEB;&#x901F;&#x6062;&#x590D;&#x3002;&#x4E3A;&#x4E86;&#x8FBE;&#x5230;&#x6027;&#x80FD;&#x6700;&#x5927;&#x5316;&#xFF0C;&#x4E00;&#x822C;&#x5EFA;&#x8BAE;&#x628A; dataDir &#x548C; dataLogDir &#x5206;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5145;&#x5206;&#x5229;&#x7528;&#x78C1;&#x76D8;&#x987A;&#x5E8F;&#x5199;&#x7684;&#x7279;&#x6027;&#x3002;</p>
+<p>&#x5728; /data &#x4E0B;&#x521B;&#x5EFA; zookeeper &#x76EE;&#x5F55;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B; data &#x548C; dataLog &#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#xFF08;<strong>&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x5404;&#x8282;&#x70B9;&#x4E0A;&#x8FDB;&#x884C;&#x540C;&#x6837;&#x64CD;&#x4F5C;</strong>&#xFF09;</p>
+<pre><code>$mkdir -p /data/zookeeper/data
+$mkdir -p /data/zookeeper/dataLog
+[hadoop@hadoop-slave01 /data/zookeeper]$ls -la
+total 16
+drwxr-xr-x 4 hadoop hadoop 4096 Nov  6 14:24 .
+drwxr-xr-x 5 hadoop hadoop 4096 Nov  6 14:24 ..
+drwxr-xr-x 2 hadoop hadoop 4096 Nov  6 14:24 data
+drwxr-xr-x 2 hadoop hadoop 4096 Nov  6 14:24 dataLog
+</code></pre><p>4.&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x6E05;&#x7406;&#x673A;&#x5236;</p>
+<p>zooKeeper &#x9ED8;&#x8BA4;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x6E05;&#x7406; log&#xFF0C;&#x6240;&#x4EE5;&#x603B;&#x4F1A;&#x6709;&#x4E00;&#x5929;&#x4F60;&#x7684;&#x78C1;&#x76D8;&#x4F1A;&#x88AB;&#x5199;&#x6EE1;&#x3002;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x6E05;&#x7406;&#x673A;&#x5236;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x4E86;&#x3002;</p>
+<pre><code>#&#x5355;&#x4F4D;&#x4E3A;&#x5C0F;&#x65F6;&#xFF0C;&#x6BCF;24&#x5C0F;&#x65F6;&#x6E05;&#x7406;&#x4E00;&#x6B21;&#x5FEB;&#x7167;&#x6570;&#x636E;&#xFF0C;&#x4FDD;&#x5B58;&#x6700;&#x8FD1;&#x7684;20&#x4E2A;&#x5FEB;&#x7167;
+autopurge.snapRetainCount=20
+autopurge.purgeInterval=24
+</code></pre><p>5.&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x670D;&#x52A1;&#x5668;&#x7EC4;&#xFF08;Quorum&#xFF09;</p>
+<p><strong>&#x6211;&#x4EEC;&#x628A;&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x5E94;&#x7528;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7EC4;&#x79F0;&#x4E4B;&#x4E3A;&#x4E00;&#x4E2A; quorum&#xFF0C;quorum &#x4E2D;&#x7684;&#x6240;&#x6709;&#x673A;&#x5668;&#x90FD;&#x6709;&#x76F8;&#x540C;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</strong></p>
+<p><strong>server.A=B&#xFF1A;C&#xFF1A;D&#xFF1A;</strong></p>
+<p>&#x5176;&#x4E2D; A &#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x662F;&#x7B2C;&#x51E0;&#x53F7;&#x670D;&#x52A1;&#x5668;&#xFF1B;B &#x662F;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684; IP &#x5730;&#x5740;&#xFF1B;C &#x8868;&#x793A;&#x7684;&#x662F;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E0E;&#x96C6;&#x7FA4;&#x4E2D;&#x7684; Leader &#x670D;&#x52A1;&#x5668;&#x4EA4;&#x6362;&#x4FE1;&#x606F;&#x7684;&#x7AEF;&#x53E3;&#xFF1B;D &#x8868;&#x793A;&#x7684;&#x662F;&#x4E07;&#x4E00;&#x96C6;&#x7FA4;&#x4E2D;&#x7684; Leader &#x670D;&#x52A1;&#x5668;&#x6302;&#x4E86;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x6765;&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x9009;&#x4E3E;&#xFF0C;&#x9009;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Leader&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x5C31;&#x662F;&#x7528;&#x6765;&#x6267;&#x884C;&#x9009;&#x4E3E;&#x65F6;&#x670D;&#x52A1;&#x5668;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#x7684;&#x7AEF;&#x53E3;&#x3002;</p>
+<pre><code>server.1=hadoop-slave01:2888:3888
+server.2=hadoop-slave02:2888:3888
+server.3=hadoop-slave03:2888:3888
+</code></pre><p>6.&#x914D;&#x7F6E;myid</p>
+<p>&#x5728; dataDir &#x4E0B;&#x65B0;&#x5EFA; myid &#x6587;&#x4EF6;&#xFF0C;myid &#x6587;&#x4EF6;&#x91CC;&#x5C31;&#x5199;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5373; zoo.cfg &#x6587;&#x4EF6;&#x91CC;&#x6240;&#x914D;&#x7F6E; &#xFF08;<strong>&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x5404;&#x8282;&#x70B9;&#x4E0A;&#x8FDB;&#x884C;&#x540C;&#x6837;&#x64CD;&#x4F5C;</strong>&#xFF09;</p>
+<pre><code>$echo &quot;1&quot; &gt; /data/zookeeper/data/myid 
+
+$ssh hadoop-slave02
+$echo &quot;2&quot; &gt; /data/zookeeper/data/myid 
+
+$ssh hadoop-slave03
+$echo &quot;3&quot; &gt; /data/zookeeper/data/myid
+</code></pre><p>7.&#x914D;&#x7F6E;&#x6587;&#x4EF6; zoo.cfg</p>
+<pre><code># The number of milliseconds of each tick
+tickTime=2000
+# The number of ticks that the initial 
+# synchronization phase can take
+initLimit=10
+# The number of ticks that can pass between 
+# sending a request and getting an acknowledgement
+syncLimit=5
+# the directory where the snapshot is stored.
+# do not use /tmp for storage, /tmp here is just 
+# example sakes.
+dataDir=/data/zookeeper/data
+dataLogDir=/data/zookeeper/dataLog
+# the port at which the clients will connect
+clientPort=2181
+server.1=hadoop-slave01:2888:3888
+server.2=hadoop-slave02:2888:3888
+server.3=hadoop-slave03:2888:3888
+# the maximum number of client connections.
+# increase this if you need to handle more clients
+#maxClientCnxns=60
+#
+# Be sure to read the maintenance section of the 
+# administrator guide before turning on autopurge.
+#
+# http://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_maintenance
+#
+# The number of snapshots to retain in dataDir
+autopurge.snapRetainCount=20
+# Purge task interval in hours
+# Set to &quot;0&quot; to disable auto purge feature
+autopurge.purgeInterval=24
+</code></pre><p>8.&#x8FDC;&#x7A0B;&#x8D4B;&#x503C;&#x5206;&#x53D1;&#x6587;&#x4EF6;</p>
+<p>&#x5C06; zookeeper-3.4.10 &#x6587;&#x4EF6;&#x5939;&#x91CD;&#x6253;&#x5305;&#x540E;&#x590D;&#x5236;&#x5230;&#x5176;&#x4ED6;&#x5B50;&#x8282;&#x70B9;&#xFF08;hadoop-slave02 &#x548C; hadoop-slave03&#xFF09;</p>
+<pre><code>$cd ~/app
+$tar zcvf zookeeper-3.4.10.tar.gz zookeeper-3.4.10
+$scp zookeeper-3.4.10.tar.gz hadoop@hadoop-master-stby:~/app/
+$scp zookeeper-3.4.10.tar.gz hadoop@hadoop-slave01:~/app/
+
+
+
+
+[hadoop@hadoop-master /home/hadoop/app]$scp zookeeper-3.4.10.tar.gz hadoop@hadoop-slave02:~/app/
+zookeeper-3.4.10.tar.gz                                             100%   33MB  33.4MB/s   00:00
+</code></pre><p>&#x5728;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x89E3;&#x538B; zookeeper-3.4.10.tar.gz &#x6587;&#x4EF6;</p>
+<pre><code>$tar -zxvf zookeeper-3.4.10.tar.gz
+$rm -rf zookeeper-3.4.10.tar.gz
+</code></pre><p>9.&#x542F;&#x52A8; zookeeper&#xFF0C;&#x5206;&#x522B;&#x5728; hadoop-slave01&#x3001;hadoop-slave02 &#x548C; hadoop-slave03 &#x4E0A;&#x542F;&#x52A8;</p>
+<pre><code>[hadoop@hadoop-slave01 /home/hadoop/app/zookeeper-3.4.10/bin]$./zkServer.sh start
+ZooKeeper JMX enabled by default
+Using config: /home/hadoop/app/zookeeper-3.4.10/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED
+[hadoop@hadoop-slave01 /home/hadoop/app/zookeeper-3.4.10/bin]$jps
+12101 QuorumPeerMain
+968 NameNode
+1162 SecondaryNameNode
+13260 Jps
+1326 ResourceManager
+</code></pre><p>10.&#x67E5;&#x770B; zookeeper &#x7684;&#x72B6;&#x6001;</p>
+<pre><code>[hadoop@hadoop-slave01 /home/hadoop/app/zookeeper-3.4.10/bin]$./zkServer.sh status
+ZooKeeper JMX enabled by default
+Using config: /home/hadoop/app/zookeeper-3.4.10/bin/../conf/zoo.cfg
+Mode: follower
+
+[hadoop@hadoop-slave02 /home/hadoop/app/zookeeper-3.4.10/bin]$./zkServer.sh status
+ZooKeeper JMX enabled by default
+Using config: /home/hadoop/app/zookeeper-3.4.10/bin/../conf/zoo.cfg
+Mode: leader
+
+[hadoop@hadoop-slave03 /home/hadoop/app/zookeeper-3.4.10/bin]$./zkServer.sh status
+ZooKeeper JMX enabled by default
+Using config: /home/hadoop/app/zookeeper-3.4.10/bin/../conf/zoo.cfg
+Mode: follower
+</code></pre><p>11.&#x505C;&#x6B62; zookeeper</p>
+<pre><code>$./zkServer.sh stop
+</code></pre><p>12.&#x65E5;&#x5FD7;&#x67E5;&#x770B;</p>
+<pre><code>$tail -f zookeeper.out
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ji-qun-cao-zuo.html" class="navigation navigation-prev " aria-label="Previous page: 集群操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hadoop-ha-da-jian.html" class="navigation navigation-next " aria-label="Next page: Hadoop HA 搭建">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"安装 Zookeeper","level":"1.1.6.8","depth":3,"next":{"title":"Hadoop HA 搭建","level":"1.1.6.9","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-da-jian.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/hadoop-ha-da-jian.md","articles":[]},"previous":{"title":"集群操作","level":"1.1.6.7","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/ji-qun-cao-zuo.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/ji-qun-cao-zuo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/an-zhuang-zookeeper.md","mtime":"2017-11-07T06:29:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-11-08T04:00:30.420Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

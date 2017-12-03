@@ -1,0 +1,574 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>SSH 免密登录 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="an-zhuang-openjdk.html" />
+    
+    
+    <link rel="prev" href="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Centos Hadoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../centos-jdk-an-zhuang.html">
+            
+                <a href="../centos-jdk-an-zhuang.html">
+            
+                    
+                    Centos JDK 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../centos-hadoop-an-zhuang.html">
+            
+                <a href="../centos-hadoop-an-zhuang.html">
+            
+                    
+                    Centos Hadoop 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                <a href="../centos-pei-zhi-ji-jian-cha-ssh.html">
+            
+                    
+                    Centos 配置及检查SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                <a href="../centos-wei-fen-bu-mo-shi-pei-zhi.html">
+            
+                    
+                    Centos 伪分布模式配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                <a href="../centos-hadoop-ge-shi-hua-ji-qi-dong.html">
+            
+                    
+                    Centos Hadoop 格式化及启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                <a href="../centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian.html">
+            
+                    
+                    Centos Hadoop 全分布式集群搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="chuang-jian-xin-yong-hu.html">
+            
+                <a href="chuang-jian-xin-yong-hu.html">
+            
+                    
+                    创建新用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                <a href="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html">
+            
+                    
+                    设置主机名与域名解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.6.3" data-path="ssh-mian-mi-deng-lu.html">
+            
+                <a href="ssh-mian-mi-deng-lu.html">
+            
+                    
+                    SSH 免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="an-zhuang-openjdk.html">
+            
+                <a href="an-zhuang-openjdk.html">
+            
+                    
+                    安装 OpenJDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                <a href="hadoop-an-zhuang-yu-pei-zhi.html">
+            
+                    
+                    Hadoop 安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="pei-zhi-ji-qun.html">
+            
+                <a href="pei-zhi-ji-qun.html">
+            
+                    
+                    配置集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.7" data-path="ji-qun-cao-zuo.html">
+            
+                <a href="ji-qun-cao-zuo.html">
+            
+                    
+                    集群操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.8" data-path="an-zhuang-zookeeper.html">
+            
+                <a href="an-zhuang-zookeeper.html">
+            
+                    
+                    安装 Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.9" data-path="hadoop-ha-da-jian.html">
+            
+                <a href="hadoop-ha-da-jian.html">
+            
+                    
+                    Hadoop HA 搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.10" data-path="hadoop-ha-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.11" data-path="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                <a href="hadoop-ha-fei-chu-ci-qi-dong.html">
+            
+                    
+                    Hadoop HA 非初次启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.12" data-path="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                <a href="chang-jian-cuo-wu-ji-jie-jue-fang-fa.html">
+            
+                    
+                    常见错误及解决方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                <a href="../centos-chang-yong-pei-zhi-ji-ming-ling.html">
+            
+                    
+                    Centos 常用配置及命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SSH 免密登录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5EFA;&#x7ACB;&#x96C6;&#x7FA4;&#x4E4B;&#x95F4;&#x7684;-ssh-&#x514D;&#x5BC6;&#x767B;&#x5F55;">&#x5EFA;&#x7ACB;&#x96C6;&#x7FA4;&#x4E4B;&#x95F4;&#x7684; SSH &#x514D;&#x5BC6;&#x767B;&#x5F55;</h1>
+<p><strong>&#x4F5C;&#x7528;&#xFF1A;Hadoop &#x4E2D;&#x4E3B;&#x8282;&#x70B9;&#x7BA1;&#x7406;&#x4ECE;&#x8282;&#x70B9;&#x662F;&#x901A;&#x8FC7; SSH &#x534F;&#x8BAE;&#x767B;&#x5F55;&#x5230;&#x4ECE;&#x8282;&#x70B9;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x800C;&#x4E00;&#x822C;&#x7684; SSH &#x767B;&#x5F55;&#xFF0C;&#x90FD;&#x662F;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;Hadoop &#x4E3B;&#x8282;&#x70B9;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;&#x6210;&#x5343;&#x4E0A;&#x767E;&#x7684;&#x4ECE;&#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x91CC;&#x5C06;&#x4E3B;&#x8282;&#x70B9;&#x516C;&#x94A5;&#x62F7;&#x8D1D;&#x5230;&#x4ECE;&#x8282;&#x70B9;&#xFF0C;&#x5B9E;&#x73B0; SSH &#x534F;&#x8BAE;&#x514D;&#x79D8;&#x94A5;&#x767B;&#x5F55;&#x3002;</strong></p>
+<h4 id="master&#x8282;&#x70B9;&#x514D;&#x5BC6;&#x767B;&#x5F55;">Master&#x8282;&#x70B9;&#x514D;&#x5BC6;&#x767B;&#x5F55;</h4>
+<p>1.&#x9996;&#x5148;&#x4FDD;&#x8BC1;&#x7CFB;&#x7EDF;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86; ssh &#x670D;&#x52A1;</p>
+<pre><code>#rpm &#x2013;qa | grep ssh
+
+openssh-6.6.1p1-11.el7.x86_64
+openssh-server-6.6.1p1-11.el7.x86_64
+openssh-clients-6.6.1p1-11.el7.x86_64
+libssh2-1.4.3-8.el7.x86_64
+</code></pre><p>2.&#x5207;&#x6362;&#x81F3; hadoop &#x7528;&#x6237;&#x4E0B;</p>
+<pre><code>#su hadoop
+</code></pre><p>3.&#x5220;&#x9664;&#x6389; ~/.ssh &#x6587;&#x4EF6;&#x5939;&#x5185;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;</p>
+<pre><code>#cd ~/.ssh/
+#ls
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+#rm -rf *
+#ls
+</code></pre><p>4.&#x7136;&#x540E;&#x4EE5; hadoop &#x8EAB;&#x4EFD;&#x751F;&#x6210;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#xFF0C;&#x671F;&#x95F4;&#x4E00;&#x8DEF;&#x56DE;&#x8F66;&#x5373;&#x53EF;</p>
+<pre><code>#ssh-keygen -t rsa -P &quot;&quot; -f ~/.ssh/id_rsa
+#ls
+id_rsa  id_rsa.pub
+</code></pre><p>&#x5B8C;&#x6210;&#x540E;&#x5728; ~/.ssh/ &#x76EE;&#x5F55;&#x4E0B;&#x5C31;&#x80FD;&#x770B;&#x5230;&#x751F;&#x6210;&#x4E86;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#xFF1A;id_rsa&#xFF0C;id_rsa.pub</p>
+<p>5.&#x63A5;&#x7740;&#xFF0C;&#x5C06;&#x516C;&#x94A5;&#x5199;&#x5165; authorized_keys &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>#cat id_rsa.pub &gt;&gt; authorized_keys     //&#x5728; ~/.ssh/&#x76EE;&#x5F55;&#x4E0B;
+#ls
+authorized_keys  id_rsa  id_rsa.pub
+</code></pre><p>6.&#x7136;&#x540E;&#xFF0C;<strong>&#x4FEE;&#x6539;&#x6743;&#x9650;</strong></p>
+<pre><code>#chmod 600 authorized_keys
+
+#ls -la
+-rw------- 1 hadoop hadoop  402 Oct 13 13:22 authorized_keys
+-rw------- 1 hadoop hadoop 1675 Oct 13 13:18 id_rsa
+-rw-r--r-- 1 hadoop hadoop  402 Oct 13 13:18 id_rsa.pub
+</code></pre><p>7.&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x9700;&#x8981;&#x5BC6;&#x7801;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#x9700;&#x8981;&#x8F93;&#x5165;yes&#xFF0C;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x7528;&#x4E86;&#xFF0C;&#x80FD;&#x514D;&#x5BC6;&#x767B;&#x5F55;&#xFF0C;&#x5219;&#x8BC1;&#x660E;&#x6210;&#x529F;&#x3002;</p>
+<pre><code>$ssh hadoop-master
+The authenticity of host &apos;hadoop-master (127.0.0.1)&apos; can&apos;t be established.
+ECDSA key fingerprint is b9:2f:9c:97:91:66:b4:4b:2a:89:5d:28:f3:06:06:2d.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &apos;hadoop-master&apos; (ECDSA) to the list of known hosts.
+Last login: Fri Oct 13 13:16:20 2017
+$ssh hadoop-master
+Last login: Fri Oct 13 13:24:31 2017 from 127.0.0.1
+</code></pre><h4 id="&#x751F;&#x6210;&#x5E76;&#x4E0A;&#x4F20;&#x516C;&#x94A5;">&#x751F;&#x6210;&#x5E76;&#x4E0A;&#x4F20;&#x516C;&#x94A5;</h4>
+<p>&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x8BA9; master &#x514D;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x5404;&#x4E2A; slave &#x8282;&#x70B9;&#xFF0C;&#x4E14; slave &#x8282;&#x70B9;&#x4E5F;&#x80FD;&#x7528; hadoop &#x7528;&#x6237;&#x514D;&#x5BC6;&#x767B;&#x5F55;&#x5230; master &#x8282;&#x70B9;&#xFF0C;&#x5728;&#x5404;&#x4E2A; slave &#x8282;&#x70B9;&#x4E0A;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;</p>
+<p>&#x4EE5; slave01 &#x4E3A;&#x4F8B;&#xFF1A;</p>
+<p>1.&#x9996;&#x5148;&#x4FDD;&#x8BC1;&#x7CFB;&#x7EDF;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86; ssh &#x670D;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x7528; hadoop &#x8EAB;&#x4EFD;&#x767B;&#x5F55;</p>
+<pre><code>#su hadoop
+</code></pre><p>2.&#x7136;&#x540E;&#xFF0C;&#x4EE5; hadoop &#x8EAB;&#x4EFD;&#x751F;&#x6210;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#xFF0C;&#x671F;&#x95F4;&#x6709;&#x63D0;&#x793A;&#xFF0C;&#x4E00;&#x8DEF;&#x56DE;&#x8F66;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code>#ssh-keygen -t rsa -P &quot;&quot; -f ~/.ssh/id_rsa
+</code></pre><p>3.&#x7136;&#x540E;&#xFF0C;&#x5C06; hadoop-master &#x8282;&#x70B9;&#x516C;&#x94A5; copy &#x81F3; slave01 &#x8282;&#x70B9; &#xFF08;&#x65E0;&#x9700;&#x5207;&#x6362;&#x81F3; root &#x7528;&#x6237;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF09;</p>
+<pre><code>#scp ~/.ssh/id_rsa.pub hadoop@hadoop-slave01:~/.ssh/id_rsa_master.pub
+
+[hadoop@hadoop-master /]$scp ~/.ssh/id_rsa.pub hadoop@hadoop-slave01:~/.ssh/id_rsa_master.pub
+id_rsa.pub                                                                100%  402     0.4KB/s   00:00
+[hadoop@hadoop-master /]$
+
+//&#x67E5;&#x770B; slave01 &#x8282;&#x70B9;&#x4E0B;&#x65B0;&#x589E; id_rsa_master.pub &#x6587;&#x4EF6;
+[hadoop@hadoop-slave01 /home/hadoop/.ssh]$ls -la
+total 28
+drwx------ 2 hadoop hadoop 4096 Oct 18 08:09 .
+drwx------ 5 hadoop hadoop 4096 Oct 13 15:47 ..
+-rw------- 1 hadoop hadoop  403 Oct 18 07:46 authorized_keys
+-rw------- 1 hadoop hadoop 1675 Oct 18 07:45 id_rsa
+-rw-rw-r-- 1 hadoop hadoop  402 Oct 19 14:41 id_rsa_master.pub
+-rw-r--r-- 1 hadoop hadoop  403 Oct 18 07:45 id_rsa.pub
+-rw-r--r-- 1 hadoop hadoop  188 Oct 18 07:46 known_hosts
+[hadoop@hadoop-slave01 /home/hadoop/.ssh]$
+</code></pre><p>slave02 &#x548C; slave03 &#x4E2D;&#x8FDB;&#x884C;&#x76F8;&#x540C;&#x7684;&#x64CD;&#x4F5C;</p>
+<h4 id="master&#x4E0E;slave&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x514D;&#x5BC6;&#x767B;&#x5F55;">Master&#x4E0E;Slave&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x514D;&#x5BC6;&#x767B;&#x5F55;</h4>
+<p>1.&#x4EE5; hadoop &#x7528;&#x6237;&#x767B;&#x5F55; slave01 &#x8282;&#x70B9;&#xFF0C;&#x8F6C;&#x5230; hadoop &#x7528;&#x6237;&#x7684; ~/.ssh &#x76EE;&#x5F55;&#x4E0B;</p>
+<pre><code>#cd ~/.ssh
+</code></pre><p>2.&#x5C06; hadoop-master &#x8282;&#x70B9;&#x4F20;&#x8FC7;&#x6765;&#x7684; id_rsa_master.pub &#x8FFD;&#x52A0;&#x5230;&#x5404; slave &#x8282;&#x70B9; authorized_keys&#xFF1A;</p>
+<pre><code>#cat id_rsa_master.pub &gt;&gt; authorized_keys
+</code></pre><p>3.&#x9A8C;&#x8BC1;</p>
+<pre><code>#ssh hadoop-slave01
+Last login: Thu Oct 19 14:55:08 2017 from 10.181.0.11
+#ssh hadoop-slave02
+Last login: Thu Oct 19 14:56:34 2017 from 10.181.0.11
+#ssh hadoop-slave03
+Last login: Thu Oct 19 14:59:00 2017
+</code></pre><p>&#x82E5;&#x53EF;&#x4EE5;&#x514D;&#x5BC6;&#x7801;&#x767B;&#x9646;&#xFF0C;&#x5219;&#x8BC1;&#x660E; ssh &#x514D;&#x5BC6;&#x767B;&#x5F55;&#x914D;&#x7F6E;&#x6210;&#x529F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.html" class="navigation navigation-prev " aria-label="Previous page: 设置主机名与域名解析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="an-zhuang-openjdk.html" class="navigation navigation-next " aria-label="Next page: 安装 OpenJDK">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSH 免密登录","level":"1.1.6.3","depth":3,"next":{"title":"安装 OpenJDK","level":"1.1.6.4","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/an-zhuang-openjdk.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/an-zhuang-openjdk.md","articles":[]},"previous":{"title":"设置主机名与域名解析","level":"1.1.6.2","depth":3,"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.md","ref":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/she-zhi-zhu-ji-ming-yu-yu-ming-jie-xi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"centos-hadoop-quan-fen-bu-shi-ji-qun-da-jian/ssh-mian-mi-deng-lu.md","mtime":"2017-11-05T06:51:21.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-11-08T04:00:30.420Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
